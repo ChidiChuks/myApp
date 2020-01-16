@@ -9,5 +9,5 @@
 
   <input type="file" (change)="fileChanged($event)" />
 
-  <img *ngIf="imageURL" src="https://ucarecdn.com/{{ imageURL }}/" />
+  <img *ngIf="imageURL" src="{{ imageURL }}" />
 </ion-content>

@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class UploadedPage implements OnInit {
 
   imageURL: string
-
+  
   constructor(public http: HttpClient) { }
 
   ngOnInit() {
@@ -26,7 +26,6 @@ export class UploadedPage implements OnInit {
     this.http.post('https://upload.uploadcare.com/base/', data)
     .subscribe(event => {
       console.log(event)
-      this.imageURL = event.json().file
     })
   }
 
