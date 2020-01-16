@@ -34,16 +34,9 @@ export class RegisterPage implements OnInit {
 
     try {
       const res = await this.afAuth.auth.createUserWithEmailAndPassword(username + '@chyde.com', password)
-
+      console.log(res)
       this.showAlert("Success!", "Welcome Aboard!")
-
       this.router.navigate(['/tabs'])
-
-      this.user.setUser({
-        username,
-        uid: res.user.uid
-      })
-      
     } catch(error) {
       console.dir(error)
       this.showAlert("Error", error.message)
