@@ -19,7 +19,7 @@ export class RegisterPage implements OnInit {
   constructor(
     public afAuth: AngularFireAuth,
     public alert: AlertController,
-    public router: Router
+    public route: Router
     ) { }
 
   ngOnInit() {
@@ -36,7 +36,7 @@ export class RegisterPage implements OnInit {
       const res = await this.afAuth.auth.createUserWithEmailAndPassword(username + '@chyde.com', password)
       console.log(res)
       this.showAlert("Success!", "Welcome Aboard!")
-      this.router.navigate(['/tabs'])
+      this.router
     } catch(error) {
       console.dir(error)
       this.showAlert("Error", error.message)
