@@ -4,9 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    children: [
+  
       {
         path: 'feed',
         loadChildren: () => import('../feed/feed.module').then( m => m.FeedPageModule)
@@ -19,8 +17,7 @@ const routes: Routes = [
         path: 'profile',
         loadChildren: () => import('../profile/profile.module').then( m => m.ProfilePageModule)
       }
-    ]
-  }
+  
 ];
 
 @NgModule({
