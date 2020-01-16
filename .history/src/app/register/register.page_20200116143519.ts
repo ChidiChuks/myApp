@@ -38,7 +38,7 @@ export class RegisterPage implements OnInit {
       this.showAlert("Success!", "Welcome Aboard!")
       this.router.navigate(['/tabs'])
     } catch(error) {
-      console.error(error)
+      console.dir(error)
       this.showAlert("Error", error.message)
     }
     

@@ -16,4 +16,8 @@ export class TabsPage implements OnInit {
     this.tabs.select('feed')
   }
 
+  fileChanged(event) {
+    const files = event.target.files
+    console.log(files)
+  }
 }

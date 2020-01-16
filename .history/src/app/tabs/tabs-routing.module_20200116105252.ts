@@ -5,8 +5,8 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: '', // default
-    component: TabsPage, // localhost/tabs/feed:uploaded:profile
+    path: '',
+    component: TabsPage,
     children: [
       {
         path: 'feed',

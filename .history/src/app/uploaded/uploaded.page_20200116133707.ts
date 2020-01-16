@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/Http';
 
 @Component({
   selector: 'app-uploaded',
@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UploadedPage implements OnInit {
 
-  constructor(public http: HttpClient) { }
+  constructor(public http: Http) { }
 
   ngOnInit() {
   }

@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '', // default
-    redirectTo: 'tabs', pathMatch: 'full'
+    redirectTo: 'register', pathMatch: 'full'
   },
   {
     path: 'login',

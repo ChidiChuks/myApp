@@ -3,8 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', // default
-    redirectTo: 'tabs', pathMatch: 'full'
+    path: '',
+    redirectTo: 'register', pathMatch: 'full'
   },
   {
     path: 'login',
